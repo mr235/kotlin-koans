@@ -17,9 +17,10 @@ fun todoTask3(): Nothing = TODO(
 fun foo(name: String): String = todoTask3()
 
 fun task3(): String {
-    todoTask3()
-//    return (foo("a") +
-//            foo("b", number = 1) +
-//            foo("c", toUpperCase = true) +
-//            foo(name = "d", number = 2, toUpperCase = true))
+//    todoTask3()
+    val code = JavaCode3()
+    return (code.foo("a") +
+            code.foo("b", number = 1) +
+            code.foo("c", toUpperCase = true) +
+            code.foo(name = "d", number = 2, toUpperCase = true))
 }
